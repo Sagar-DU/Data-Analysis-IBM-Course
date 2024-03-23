@@ -56,8 +56,61 @@ fullName = firstName + lastName # this is concatenating
 # print (firstName.find("Sagar")) # if couldn't find the answer will be negative 1
 
 #Split the substring into list
-name = "Michael Jackson"
-split_string = (name.split())
-print (split_string)
+# name = "Michael Jackson"
+# split_string = (name.split())
+# print (split_string)
 
-# Incomplete
+import re
+
+# s1 = "Michael Jackson is the best"
+
+# # defining the patteren to search
+# pattern = r"Jackson"
+
+# # using the search() function to search for the pattern in the string
+# result = re.search (pattern, s1)
+
+# # check if a match was found
+# if result:
+#     print ("Match found!")
+# else:
+#     print ("No match!")
+
+# This code will search for phone number
+# pattern = r"\d\d\d\d\d\d\d\d\d\d\d" # this line decides how many digits I am looking?
+# text = "My phone number is 01521330993"
+# match = re.search (pattern, text)
+
+# if match:
+#     print ("Phone number found:", match.group())
+# else:
+#     print ("No mathch!")
+
+# pattern = r"\W"
+# text = "Hello, World!"
+# matches = re.findall (pattern, text) # match any character that is not a word character (a-z, A-Z, 0-9, or _) & The findall() function finds all occurrences of a specified pattern within a string.
+
+# print ("Matches:", matches)
+
+s2 = "Michael Jackson was a singer and known as the 'King of Pop'"
+
+
+# # Use the findall() function to find all occurrences of the "as" in the string
+# result = re.findall("as", s2)
+
+# # Print out the list of matched words
+# print(result)
+
+# uses the split function to split the string by "\s" = space
+# split_array = re.split("\s", s2)
+
+# print (split_array)
+
+# pattern = r"king of Pop"
+# replacement = "Legend"
+
+# new_string = re.sub (pattern, replacement, s2, flags=re.IGNORECASE)
+
+# print (new_string)
+
+# Complete
