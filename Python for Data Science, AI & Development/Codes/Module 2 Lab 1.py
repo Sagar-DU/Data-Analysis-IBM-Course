@@ -128,3 +128,4 @@ del(shopping_list[4])
 # We are ready with our shopping list.
 print ("New shorted shopping list:", shopping_list)
 
+# Completed
