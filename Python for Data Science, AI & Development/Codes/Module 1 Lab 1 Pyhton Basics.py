@@ -1,7 +1,7 @@
 # Say 'Hello' to the world in Python
-# print ("Bismillah Ar Rahmanir Rahim")
+print ("Bismillah Ar Rahmanir Rahim")
 
-# import sys
+import sys
 
 # print (sys.version) # it shows the version of the installed Python
 
@@ -10,17 +10,17 @@
 # print ("This will not run because of the previous error.")
 
 # Types of objects in Python
-# type (12)
+type (12)
 # print (type(12)) # the output will be int
 
-# type (2.14)
+type (2.14)
 # print (type(2.14)) # the output will be float
 
-# type ("Hello, world!")
+type ("Hello, world!")
 # print (type("Hello, world!")) # the output will be str
 
 # Converting from one object type to a different object type
-# type (2)
+type (2)
 # print (type(2)) #will give me an int
 
 # print (float(2)) #converted the int into float
@@ -34,9 +34,11 @@
 # print (float ("1.2")) # coverted into float
 
 # print (str(1)) #converted into string
+
 # print (type(str(1)))
 
 # print (str(1.2)) # converted float into string
+
 # print (type(str(1.2)))
 
 # Boolean Data type 
@@ -57,13 +59,13 @@
 # print ((30 + 2) * 60) # will do the brackets first
 
 # Variables
-# x = 43 + 60 + 16 + 41
+x = 43 + 60 + 16 + 41
 # print (x) # will give me the sum
 
-# y = x / 60
+y = x / 60
 # print (y) # can be use to define other variable in expression
 
-# x = x / 60
+x = x / 60
 # print (x) # can change itself
 
 # This all there is to in Lab 1!
