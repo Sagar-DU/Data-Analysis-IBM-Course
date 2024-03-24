@@ -51,7 +51,7 @@ splitedByDelimiter = "A, B, C, D".split()
 # print ("Before B:",B)
 
 # copying by referance changes both when one is changed
-B[0] = "Bananna"
+# B[0] = "Bananna"
 
 # print ("After A:", A)
 # print ("After B:", B)
@@ -61,6 +61,8 @@ B = A[:] # cloning process
 
 print ("Before A:", A)
 print ("Before B:", B)
+
+B[0] = "Bananna"
 
 print ("After A:", A)
 print ("After B:", B)
