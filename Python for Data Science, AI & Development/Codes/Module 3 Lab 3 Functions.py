@@ -315,3 +315,5 @@ def word_count (string, pasedkey):
 word_count (string, "Mary")
 word_count (string, "little")
 word_count (string, "lamb")
+
+# Completed
