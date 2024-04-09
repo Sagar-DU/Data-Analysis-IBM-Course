@@ -61,4 +61,42 @@ print(BlueCircle.radius)
 print(BlueCircle.color)
 
 # Drawing Circle
-BlueCircle.drawCircle()
+# BlueCircle.drawCircle()
+
+# Creating a new Rectangle class for creating a rectangle object
+
+class Rectangle(object):
+    
+    # Constructor
+    def __init__(self, width=2, height=3, color='r'):
+        self.height = height 
+        self.width = width
+        self.color = color
+    
+    # Method
+    def drawRectangle(self):
+        plt.gca().add_patch(plt.Rectangle((0, 0), self.width, self.height ,fc=self.color))
+        plt.axis('scaled')
+        plt.show()
+        
+# Creating a new object rectangle
+SkinnyBlueRectangle = Rectangle(2, 3, 'blue')
+
+# Print the object attributes
+print("Height of the rectangle", SkinnyBlueRectangle.height)
+print("Width of the rectangle", SkinnyBlueRectangle.width)
+print("Color of the rectangle", SkinnyBlueRectangle.color)
+
+# Drawing the Rectangle
+# SkinnyBlueRectangle.drawRectangle()
+
+# Create a new object rectangle
+FatYellowRectangle = Rectangle(20, 5, 'yellow')
+
+# Printing the object attributes
+print("Height of the new Ractangle",FatYellowRectangle.height)
+print("Width of the new Ractangle",FatYellowRectangle.width)
+print("Color of the new Ractangle",FatYellowRectangle.color)
+
+# Drawing the new Rectangle
+FatYellowRectangle.drawRectangle()
