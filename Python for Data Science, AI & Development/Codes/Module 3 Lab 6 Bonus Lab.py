@@ -95,3 +95,5 @@ print(freqMap)
 word = "lorem"
 frequency = analyzed.freqOf(word)
 print("Frequecny of ", word, ":", frequency)
+
+# Completed
