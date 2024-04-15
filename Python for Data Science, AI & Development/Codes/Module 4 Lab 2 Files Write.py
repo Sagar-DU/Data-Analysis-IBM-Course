@@ -153,19 +153,25 @@ def cleanFiles(currentMem, exMem):
             header = members[0]
             members.pop(0)
 
+            # Sorting inactive members 
             inactive = []
             for member in members:
                 if "no" in member:
                     inactive.append(member)
 
+            # Writing header 
             writefile.seek(0)
             writefile.write(header)
 
             for member in members:
+                # Sorting inactive members in the inactive file
                 if (member in inactive):
                     appendfile.write(member)
+                
+                # Sorting active member in the member file 
                 else:
                     writefile.write(member)
+            # Deleting the previous data 
             writefile.truncate()
 
 memReg = 'members.txt'
