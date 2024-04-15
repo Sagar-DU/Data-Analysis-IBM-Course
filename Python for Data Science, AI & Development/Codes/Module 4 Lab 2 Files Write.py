@@ -57,5 +57,49 @@ with open (example2, "a+") as testappend:
     print ("Reading with one with:") 
     print(testappend.read())
 
-# with open(example2, "r") as file:
-#     print (file.read())
+# Revisiting a+
+with open (example2, "a+") as testingappendplus:
+    print ("Initial Location: {}".format(testingappendplus.tell()))
+
+    data = testingappendplus.read()
+    if (not data): # means empty string returns flase in python
+        print ("Nothing to read!")
+    else:
+        print (testingappendplus.read())
+
+    testingappendplus.seek(0, 0) # moves 0 bytes from beginning.
+
+    print ("\nNew Location: {}".format(testingappendplus.tell()))
+
+    data = testingappendplus.read()
+
+    if (not data): # means empty string returns flase in python
+        print ("Nothing to read!")
+    else:
+        print (data)
+    
+    print ("Location after read: {}".format(testingappendplus.tell()))
+
+    with open (example2, "r+") as testwritefile:
+        testwritefile.seek(0, 0) #writing at the beginning of the file
+        
+        testwritefile.write("Line 1" + "\n")
+        testwritefile.write("Line 2" + "\n")
+        testwritefile.write("Line 3" + "\n")
+        testwritefile.write("Line 4" + "\n")
+        testwritefile.write("Finished\n")
+
+        testwritefile.truncate() #this will delete everything previously stored on the file
+        testwritefile.seek(0,0)
+        
+        print (testwritefile.read())
+
+# Copying a file 
+with open (example2, "r") as readfile:
+    with open ("Example3.txt", "w") as writefile:
+        for line in readfile:
+            writefile.write(line)
+
+with open ("Example3.txt", "r") as readfile:
+    print ("This is new file data copied from previous file:")
+    print (readfile.read())
