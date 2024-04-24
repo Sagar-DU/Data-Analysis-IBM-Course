@@ -59,3 +59,5 @@ print (ressults2)
 df3 = pd.DataFrame(ressults2)
 df3.drop (columns=["type", "id"], inplace=True)
 print(df3)
+
+# Completed
